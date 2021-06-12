@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=traffic&affiliateId=<AFFILIATE_ID>&dateStart=04%2F01%2F2021&format=csv&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sun, 20 Jun 2021 12:22:50 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 20 Jun 2021 12:22:54 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cf-ray:
+      - 6624f7193f55408a-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=traffic.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0acaf8c3c80000408ac9196000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      x-powered-by:
+      - ASP.NET
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: "merchantID,organization,website,uniqueHits,Commissions,netSales,numberOfVoids,numberOfSales,conversion,epc\r\n68246,\"penguin,
+        Inc\",www.penguin.com,85,$48.30,$321.97,0,3,3.53%,$56.82\r\n97294,Freedom
+        Merino Inc,www.Freedommerino.com,0,$16.65,$166.50,0,1,0.00%,$0.00\r\n84199,wool&amp;,additionalclothing.com/,125,$13.80,$138.00,0,1,0.80%,$11.04\r\n83434,royalwool,royalwool.com,228,$13.60,$136.00,0,2,0.88%,$5.96
+        \r\n"
+    http_version:
+  recorded_at: Sun, 20 Jun 2021 12:22:54 GMT
+recorded_with: VCR 5.1.0

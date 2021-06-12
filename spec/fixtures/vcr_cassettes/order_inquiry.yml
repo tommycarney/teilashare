@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=orderInquiry&affiliateId=<AFFILIATE_ID>&format=csv&merchantId=84199&orderDate=01%2F03%2F2021&orderNumber=154945722&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sun, 20 Jun 2021 15:33:58 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 20 Jun 2021 15:33:59 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      content-length:
+      - '22'
+      connection:
+      - keep-alive
+      cf-ray:
+      - 66260f0538bfdbf3-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=orderInquiry.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0acba7b7400000dbf32a0a0000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      x-powered-by:
+      - ASP.NET
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: UTF-8
+      string: "result,transID\r\n5,0 \r\n"
+    http_version:
+  recorded_at: Sun, 20 Jun 2021 15:33:59 GMT
+recorded_with: VCR 5.1.0

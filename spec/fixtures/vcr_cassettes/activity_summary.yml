@@ -1,0 +1,66 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=activitySummary&affiliateId=<AFFILIATE_ID>&format=csv&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sat, 19 Jun 2021 08:23:24 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 19 Jun 2021 08:23:25 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cf-ray:
+      - 661b5aef3c9153f1-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=activitySummary.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0ac4f72984000053f1a0965000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: "Merchant Id,Merchant,Commissions Month,Commissions Total,Hits Month,Hits
+        Total,Sales Month,Sales Total,Conversion Month,Conversion Total,Epc Month,Epc
+        Total,Merchant Status,Sale Comm.,Lead Comm.,Hit Comm.,NumberOfSalesMonth,CommissionsSalesMonth,NumberOfLeadsMonth,CommissionsLeadsMonth,NumberOfTwoTierMonth,CommissionsTwoTierMonth,NumberOfBonusesMonth,CommissionsBonusMonth,NumberOfPPCallsMonth,CommissionsPPCallMonth,NumberOfLeapfrogsMonth,CommissionsLeapfrogMonth\r\n83434,TopCorp,56.7,3875.17,149,10210,3,312,2.013422818791,3.055827619980411,38.05369,37.95465,Online,10%,,,3,56.7,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0\r\n84199,wool&amp;,27.6,912.88,75,4348,2,78,2.666666666666,1.793928242870285,36.8,20.9954,Online,10%,,,2,27.6,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0\r\n68246,\"Acme,
+        Inc\",14.25,2113.62,50,1981,1,133,2.000000000000,6.713780918727915,28.5,106.6946,Online,15%,,,1,14.25,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0\r\n97294,Example
+        Clothing Inc,0.0,182.99,0,255,0,10,0E-12,3.921568627450980,0.0,71.76079,Closed,10%,,,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0\r\n47,shareasale.com,0.0,0.0,0,0,0,0,0E-12,0E-15,0.0,0.0,Online,$150,$30,,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0,0,0.0
+        \r\n"
+    http_version:
+  recorded_at: Sat, 19 Jun 2021 08:23:25 GMT
+recorded_with: VCR 5.1.0

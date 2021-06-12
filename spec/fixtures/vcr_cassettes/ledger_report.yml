@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=ledger&affiliateId=<AFFILIATE_ID>&format=csv&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sun, 20 Jun 2021 16:19:35 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 20 Jun 2021 16:19:36 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cf-ray:
+      - 662651d4793440ea-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=ledger.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0acbd178c6000040ea7d88e000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: "ledgerid,action,dt,transid,transtype,impact,afftrack,comment,merchantid,storeid\r\nT-163559639,Payment,06/20/2021
+        02:15:00 AM,163559639,Affiliate Payment,-184.65,,Payment 5/1 - 5/31 Commissions
+        - ACH Deposit Sent June 20,47,\r\nT-163539034,Transaction Created,06/19/2021
+        04:33:10 PM,163539034,Sale,14.25,,Sale - 646054941,68246,1\r\nT-163364059,Transaction
+        Created,06/15/2021 10:51:04 PM,163364059,Sale,13.80,,Sale - 29100,84199,\r\nT-163321862,Transaction
+        Created,06/15/2021 03:07:00 AM,163321862,Sale,4.90,,Sale - 78539,83434,\r\nT-163307561,Transaction
+        Created,06/14/2021 07:38:05 PM,163307561,Sale,14.25,,Sale - 646031423,68246,1\r\nT-163265743,Transaction
+        Created,06/13/2021 10:07:15 PM,163265743,Sale,13.80,,Sale - 28805,84199,\r\nT-163115116,Transaction
+        Created,06/10/2021 01:35:13 PM,163115116,Sale,45.00,,Sale - 78283,83434,\r\nT-162899136,Transaction
+        Created,06/06/2021 01:40:27 PM,162899136,Sale,6.80,,Sale - 78082,83434,\r\nT-162547128,Transaction
+        Created,05/30/2021 09:15:05 AM,162547128,Sale,13.60,,Sale - 77742,83434,\r\nT-162543632,Transaction
+        Created,05/30/2021 05:34:47 AM,162543632,Sale,10.80,,Sale - 77738,83434,\r\nT-162494670,Transaction
+        Created,05/28/2021 11:02:37 PM,162494670,Sale,26.70,,Sale - 77697,83434,\r\nT-162478692,Transaction
+        Created,05/28/2021 04:35:11 PM,162478692,Sale,12.80,,Sale - 27543,84199,\r\nT-162329928,Transaction
+        Created,05/25/2021 06:53:13 PM,162329928,Sale,10.80,,Sale - 77561,83434,\r\nT-162274517,Transaction
+        Created,05/24/2021 06:52:58 PM,162274517,Sale,21.60,,Sale - 77510,83434, \r\n"
+    http_version:
+  recorded_at: Sun, 20 Jun 2021 16:19:36 GMT
+recorded_with: VCR 5.1.0

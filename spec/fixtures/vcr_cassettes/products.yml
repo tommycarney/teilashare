@@ -1,0 +1,77 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=getProducts&affiliateId=<AFFILIATE_ID>&format=csv&keyword=shoes&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sun, 20 Jun 2021 12:39:26 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 20 Jun 2021 12:39:55 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cf-ray:
+      - 66250f55ec932c8a-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=getProducts.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0acb07e9b300002c8a7e998000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      x-powered-by:
+      - ASP.NET
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: "productId,Name,Merchant Id,Organization,Link,Thumbnail,Big Image,Price,Retail
+        Price,Category,Sub Category,Description,Custom 1,Custom 2,Custom 3,Custom
+        4,Custom 5,Last Updated,Status,Manufacture,Part Number,Merchant Category,Merchant
+        Sub Category,Short Description,ISBN,UPC,SKU,Cross Sell,Merchant Group,Merchant
+        Sub Group,Compatiable With,Compare To,Quantity Discount,Best Seller,Add to
+        Cart URL,Reviews URL,Option 1,Option 2,Option 3,Options 4,Option 5,ReservedForFutureUse,ReservedForFutureUse,ReservedForFutureUse,ReservedForFutureUse,ReservedForFutureUse,ReservedForFutureUse,ReservedForFutureUse,ReservedForFutureUse,ReservedForFutureUse,ReservedForFutureUse,WWW,Program
+        Category,Status,Commission Text,Sale Comm,Lead Comm,Hit Comm,Cookie Length,Auto
+        Approve,Auto Deposit,Datafeed Items,Epc 7 Day,EPC 30 Day,Reversal Rate 7 Day,Reversal
+        Rate 30 Day,Ave Sale 7 Day,Ave Sale 30 Day,Ave Comm 7 Day,Ave Comm 30 Day,Powerrank
+        Top 100,Store Id\r\n1213935343,\"penguin Women's Wool Slip On Shoes, Dark
+        Blue, Size 9\",68246,\"Penguin Corp\",https://www.shareasale.com/m-pr.cfm?merchantID=68246&userID=<AFFILIATE_ID>&productID=1213935343,,https://cdn.shopify.com/s/files/1/1104/4168/products/WL2MMST_SHOE_ANGLE_GLOBAL_MENS_WOOL_LOUNGER_2_STORM_BLUE_GREY.png?v=1621641518,95.0,,8,61,,Women's,Storm,Wool
+        Loungers,Shoes,,2021-05-25 04:50:15.85,instock,,,,,\"Soft comfort in a smart
+        silhouette that makes every experience a little more leisurely and a lot more
+        cozy.  penguin Women's Wool Slip On Shoes, Storm, Size 9\",,,WL2WSTM090,,,,,,,0,,,,,,,,,,,,,,,,,,www.penguin.com,Accessories,yes,\"
+        15.00%  Per Sale\",15.0,0.0,0.0,15,No,0,3062,67.34,75.88,3.17,0.65,117.99,120.06,16.94,17.31,Yes,0\r\n"
+    http_version:
+  recorded_at: Sun, 20 Jun 2021 12:39:55 GMT
+recorded_with: VCR 5.1.0

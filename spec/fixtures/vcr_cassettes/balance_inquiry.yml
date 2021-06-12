@@ -1,0 +1,61 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=balance&affiliateId=<AFFILIATE_ID>&format=csv&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sun, 20 Jun 2021 16:21:02 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 20 Jun 2021 16:21:03 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      content-length:
+      - '17'
+      connection:
+      - keep-alive
+      cf-ray:
+      - 662653f46ad60075-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=balance.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0acbd2ccbf00000075870ea000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: UTF-8
+      string: "Balance\r\n367.7 \r\n"
+    http_version:
+  recorded_at: Sun, 20 Jun 2021 16:21:03 GMT
+recorded_with: VCR 5.1.0

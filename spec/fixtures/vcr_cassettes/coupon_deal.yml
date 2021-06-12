@@ -1,0 +1,63 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=couponDeals&affiliateId=<AFFILIATE_ID>&format=csv&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sun, 20 Jun 2021 15:47:14 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 20 Jun 2021 15:47:14 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cf-ray:
+      - 6626226e3e1e40cc-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=couponDeals.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0acbb3d8e6000040cc2e162000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: "Deal Id,Merchant Id,Merchant,Start Date,End Date,Publish Date,Title,BigImage,Tracking
+        URL,SmallImage,Category,Description,Restrictions,Keywords,Coupon Code,Edit
+        Date,Store Id \r\n"
+    http_version:
+  recorded_at: Sun, 20 Jun 2021 15:47:14 GMT
+recorded_with: VCR 5.1.0

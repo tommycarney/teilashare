@@ -1,0 +1,67 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=merchantTimespan&affiliateId=<AFFILIATE_ID>&dateEnd=01%2F31%2F2021&dateStart=01%2F01%2F2021&format=csv&merchantId=83434&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sat, 19 Jun 2021 08:32:52 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sat, 19 Jun 2021 08:32:53 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cf-ray:
+      - 661b68cb3e77ce7f-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=merchantTimespan.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0ac4ffd2ff0000ce7fae225000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      x-powered-by:
+      - ASP.NET
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: "Merchant,Clicks,Gross Sales,Voids,Net Sales,Sales,Manual Credits,Commisssions,Conversion,EPC,Average
+        Order,Number Sales,Number Leads,Number TwoTier,Number Bonuses,Number PayPerCall,Number
+        LeapFrog,Sale Commissions,Lead Commissions,TwoTier Commissions,Bonus Commissions,PayPerCall
+        Commissions,LeapFrog Commissions\r\n83434-royalwool-royalwool.com,218,$1291,0,$1291,6,0,$129.1,2.752293577981,59.2201834862,215.166666667,6,0,0,0,0,0,$129.1,$0,$0,$0,$0,$0
+        \r\n"
+    http_version:
+  recorded_at: Sat, 19 Jun 2021 08:32:53 GMT
+recorded_with: VCR 5.1.0

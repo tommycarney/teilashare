@@ -1,0 +1,108 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=merchantSearch&affiliateId=<AFFILIATE_ID>&format=csv&keyword=whiskey&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sun, 20 Jun 2021 16:15:54 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 20 Jun 2021 16:15:57 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cf-ray:
+      - 66264c777c6c581a-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=merchantSearch.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0acbce1eaf0000581a3e082000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      x-powered-by:
+      - ASP.NET
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: "Merchant Id,Organization,WWW,Category,Status,Commission Text,Sale Comm,Lead
+        Comm,Hit Comm,Cookie Length,Auto Approve,Auto Deposit,Datafeed Items,Epc 7
+        Day,EPC 30 Day,Reversal Rate 7 Day,Reversal Rate 30 Day,Ave Sale 7 Day,Ave
+        Sale 30 Day,Ave Comm 7 Day,Ave Comm 30 Day,Powerrank Top 100\r\n103574,\"Designer
+        Dram, LLC\",designerdram.com,Food/Drink,Not Applied,\" 10.00%  Per Sale\",10.0,0.0,0.0,30,No,1,0,152.69,245.81,0.0,0.0,132.33,128.18,13.23,12.82,No\r\n75670,\"Flaviar,
+        Inc.\",flaviar.com/exclusive,Food/Drink,Not Applied,\" $50.00  Per Sale\",50.0,0.0,0.0,30,No,1,0,135.62,71.49,0.0,0.0,201.33,226.25,50.0,50.0,No\r\n79331,Ranger
+        Station Supply Co,rangerstation.co/,Accessories,Not Applied,\" 10.00%  Per
+        Sale\",10.0,0.0,0.0,30,No,1,17,67.25,64.14,0.0,0.0,49.28,58.28,6.56,7.52,No\r\n97462,Vintage
+        Gentlemen,www.thevintagegentlemen.com,Accessories,Not Applied,\" 10.00%  Per
+        Sale\",10.0,0.0,0.0,90,Yes,1,927,52.48,37.49,0.0,0.0,117.37,105.06,11.74,10.51,No\r\n28144,HomeWetBar.com,www.homewetbar.com,Gifts,Not
+        Applied,\" 10.00%  Per Sale\",10.0,0.0,0.0,15,No,1,3416,51.7,45.21,141.82,56.44,164.04,118.87,5.05,4.34,No\r\n90320,The
+        Whisky Exchange,www.thewhiskyexchange.com,Food/Drink,Not Applied,\" 2.00%
+        \ Per Sale\",2.0,0.0,0.0,30,No,1,9249,45.62,54.9,0.0,0.0,229.51,316.36,10.61,15.02,No\r\n90136,NapaCabs,www.napacabs.com,Food/Drink,Not
+        Applied,\" 5.00%  Per Sale\",5.0,0.0,0.0,90,No,1,10218,43.46,44.11,0.0,0.0,159.7,165.46,7.99,8.27,No\r\n88390,Coopers
+        Cask Coffee,www.cooperscoffeeco.com,Gourmet,Not Applied,\" 8.00%  Per Sale\",8.0,0.0,0.0,30,No,1,451,36.74,19.51,0.0,0.0,42.96,45.0,3.44,3.6,No\r\n100245,AVEC
+        DRINKS CO,avecdrinks.com,Food/Drink,Not Applied,\" 5.00%  Per Sale\",5.0,0.0,0.0,15,No,1,0,32.79,24.89,0.0,0.0,58.99,51.0,4.08,3.81,No\r\n86360,\"Tippsy,
+        Inc\",tippsysake.com,Food/Drink,Not Applied,\" 10.00%  Per Sale\",10.0,0.0,0.0,30,No,1,0,26.99,37.29,0.0,0.0,84.57,134.24,8.46,13.42,No\r\n94336,Seelbachs,seelbachs.com,Food/Drink,Not
+        Applied,\" 10.00%  Per Sale\",10.0,0.0,0.0,30,Yes,1,0,23.27,12.26,0.0,0.0,57.0,57.0,5.7,5.7,No\r\n74521,Minibar
+        Delivery,minibardelivery.com,Commerce/Classifieds,Not Applied,,0.0,0.0,0.0,30,No,1,0,20.47,17.5,0.0,0.0,59.92,80.32,3.79,3.65,No\r\n100288,Liquorama,www.liquorama.net,Food/Drink,Not
+        Applied,\" 5.00%  Per Sale\",5.0,0.0,0.0,90,No,1,1638,19.06,14.13,0.0,0.0,119.9,142.2,6.0,7.31,No\r\n62290,Angels'
+        Cup,angelscup.com,Food/Drink,Not Applied,\" $2.00  Per Sale\",2.0,0.0,0.0,30,No,1,72,15.49,24.01,0.0,0.0,84.02,55.41,3.91,6.2,No\r\n95310,Prestige
+        Decanters,prestigehaus.com,Home & Garden,Not Applied,\" 15.00%  Per Sale\",15.0,0.0,0.0,60,No,0,0,14.25,34.28,0.0,0.0,171.0,112.28,3.42,5.66,No\r\n62556,Mash&amp;Grape,mashandgrape.com,Food/Drink,Not
+        Applied,\" 8.00%  Per Sale\",8.0,0.0,0.0,30,No,1,0,13.1,17.32,0.0,0.0,110.73,117.36,8.96,9.47,No\r\n82278,JoyJolt,www.joyjolt.com/,Home
+        & Garden,Not Applied,\" 10.00%  Per Sale\",10.0,0.0,0.0,90,No,1,181,11.26,10.24,7.14,1.85,42.4,46.67,3.42,4.3,No\r\n93832,Spirit
+        Hub,www.spirithub.com,Food/Drink,Not Applied,\" 8.00%  Per Sale\",8.0,0.0,0.0,30,No,1,1157,9.94,15.54,0.0,0.0,67.81,104.43,6.64,9.07,No\r\n64802,SaloonBox,saloonbox.com,Food/Drink,Not
+        Applied,\" $1.00  Per Sale\",1.0,0.0,0.0,30,Yes,1,0,8.56,6.17,0.0,0.0,180.52,185.93,1.0,1.0,No\r\n92573,Toast!
+        Supplements Inc,toastgummy.com,Food/Drink,Not Applied,\" 8.00%  Per Sale\",8.0,0.0,0.0,90,No,1,8,1.58,3.98,0.0,0.0,19.99,37.83,1.6,3.03,No\r\n70683,Advanced
+        Mixology,www.advancedmixology.com/,Home & Garden,Not Applied,\" 15.00%  Per
+        Sale\",15.0,0.0,0.0,90,Yes,1,11,0.0,1.47,0.0,0.0,0.0,49.97,0.0,7.5,No\r\n36971,For
+        Lovers,www.forwhiskeylovers.com,Food/Drink,Not Applied,\" 5.00%  Per Sale\",5.0,0.0,0.0,15,No,1,375,0.0,22.09,0.0,0.0,0.0,107.11,0.0,5.36,No\r\n58087,The
+        BroBasket,www.thebrobasket.com,Gifts,Not Applied,\" 12.00%  Per Sale\",12.0,0.0,0.0,30,No,1,49,0.0,20.92,0.0,29.79,0.0,154.98,0.0,8.27,No\r\n78648,Stuck
+        In Glass,www.stuckinglass.com,Gifts,Not Applied,\" 10.00%  Per Sale\",10.0,0.0,0.0,90,No,1,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,No\r\n103523,The
+        Farmhouse Still,www.shopcrispypig.com,Food/Drink,Not Applied,\" 7.00%  Per
+        Sale\",7.0,0.0,0.0,30,No,1,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,No\r\n107139,AlcoholDelivery.com,shop.alcoholdelivery.com,Food/Drink,Not
+        Applied,\" $6.00  Per Sale\",6.0,0.0,0.0,30,No,1,0,0.0,0.3,0.0,20.0,0.0,41.08,0.0,1.21,No\r\n107699,Rabbit
+        Hole Distillery,www.rabbitholedistillery.com/,Food/Drink,Not Applied,\" 15.00%
+        \ Per Sale\",15.0,0.0,0.0,30,Country,1,0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,No\r\n110651,IceQuisite,icequisite.com/,Home
+        & Garden,Not Applied,\" 12.00%  Per Sale\",12.0,0.0,0.0,90,Yes,1,4,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,No\r\n96960,18.21
+        Man Made,www.1821manmade.com,Health,Not Applied,\" 5.00%  Per Sale\",5.0,0.0,0.0,90,No,1,0,0.0,96.86,0.0,44.44,31.5,54.21,1.58,2.26,No\r\n95004,Whiskey
+        Darling Boutique,shopwhiskeydarling.com,Clothing,Not Applied,\" 10.00%  Per
+        Sale\",10.0,0.0,0.0,30,No,1,1221,0.0,5.55,0.0,0.0,0.0,68.62,0.0,6.86,No\r\n102568,Artisan
+        Craft Cocktails,artisancraftcocktails.com,Food/Drink,Not Applied,\" 20.00%
+        \ Per Sale\",20.0,0.0,0.0,45,No,1,6,0.0,5.49,0.0,0.0,0.0,49.99,0.0,10.0,No\r\n103325,\"Outlaw
+        Soaps, Inc\",LiveOutlaw.com,\"Accessories,Gifts\",Not Applied,\" 20.00%  Per
+        Sale\",20.0,0.0,0.0,45,Country,1,0,-9.64,46.01,18.75,5.13,37.73,42.97,-0.64,6.35,No
+        \r\n"
+    http_version:
+  recorded_at: Sun, 20 Jun 2021 16:15:57 GMT
+recorded_with: VCR 5.1.0

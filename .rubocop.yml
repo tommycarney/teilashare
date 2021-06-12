@@ -1,0 +1,13 @@
+#inherit_from: ../.rubocop.yml
+require: rubocop-rspec
+
+Layout/LineLength:
+  Max: 99
+RSpec/RepeatedExample:
+  Enabled: false
+Metrics/BlockLength:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+RSpec/DescribeClass:
+  Enabled: false

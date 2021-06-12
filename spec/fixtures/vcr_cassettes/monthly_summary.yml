@@ -1,0 +1,65 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=monthlySummary&affiliateId=<AFFILIATE_ID>&dateMonth=05%2F01%2F2021&format=csv&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sun, 20 Jun 2021 11:58:55 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 20 Jun 2021 11:58:59 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cf-ray:
+      - 6624d40fdf350635-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=monthlySummary.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0acae2dde5000006353b2ed000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      x-powered-by:
+      - ASP.NET
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: "Merchant Id,Merchant,Website,Transaction In Period,Voids In Period,Gross
+        Sales Amount,Total Commision in Period\r\n68246,\"Penguin Corp\",www.penguin.com,4,0,504.21000000000004,75.63\r\n83434,royalwool,royalwool.com,11,0,1505.0,150.5\r\n84199,wool&amp;,additionalclothing.com/,2,0,384.0,38.400000000000006
+        \r\n"
+    http_version:
+  recorded_at: Sun, 20 Jun 2021 11:58:59 GMT
+recorded_with: VCR 5.1.0

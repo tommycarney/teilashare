@@ -1,0 +1,214 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.shareasale.com/x.cfm?action=merchantCreative&affiliateId=<AFFILIATE_ID>&format=csv&merchantId=68246&token=<TOKEN>&version=2.3
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v1.4.2
+      x-Shareasale-Date:
+      - Sun, 20 Jun 2021 16:02:48 GMT
+      x-Shareasale-Authentication:
+      - "<AUTH>"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      date:
+      - Sun, 20 Jun 2021 16:02:49 GMT
+      content-type:
+      - text/plain;charset=UTF-8
+      transfer-encoding:
+      - chunked
+      connection:
+      - keep-alive
+      cf-ray:
+      - 6626393d5baa07a2-LHR
+      access-control-allow-origin:
+      - "*"
+      content-disposition:
+      - filename=merchantCreative.csv
+      strict-transport-security:
+      - max-age=15552000; includeSubDomains; preload
+      cf-cache-status:
+      - DYNAMIC
+      cf-apo-via:
+      - origin,host
+      cf-request-id:
+      - 0acbc21a57000007a274a92000000001
+      expect-ct:
+      - max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+      p3p:
+      - policyref="/w3c/p3p.xml", CP="NON DSP COR CUR ADMi TAIi PSAi IVAi OUR STP
+        NAV"
+      x-content-type-options:
+      - nosniff
+      x-frame-options:
+      - SAME-ORIGIN
+      x-powered-by:
+      - ASP.NET
+      vary:
+      - Accept-Encoding
+      server:
+      - cloudflare
+    body:
+      encoding: ASCII-8BIT
+      string: "Banner Id,Name,Image Url,Click Url,Text,Category,Image Width,Image
+        Height,Alt Text,Modified Date,Merchant ID,Organization,WWW\r\n1219962,penguin
+        Logo,https://static.shareasale.com/image/68246/penguinlogoB.jpg,https://www.shareasale.com/r.cfm?b=1219962&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Logo,1749,1749,penguin,2018-07-30
+        18:27:29.813,68246,\"Penguin Corp\",www.penguin.com\r\n1219963,penguin
+        Logo,https://static.shareasale.com/image/68246/penguinlogo.png,https://www.shareasale.com/r.cfm?b=1219963&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Logo,1749,1749,penguin,2018-07-30
+        18:27:30.197,68246,\"Penguin Corp\",www.penguin.com\r\n1404924,Clay Tree
+        Breezer,https://static.shareasale.com/image/68246/penguin_TR_BZ_Clay_MED.jpg,https://www.shareasale.com/r.cfm?b=1404924&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,400,400,penguin
+        Tree Breezers - Clay,2019-08-06 10:43:50.963,68246,\"Penguin Corp\",www.penguin.com\r\n1404925,penguin
+        Tree Runners - Savanna Dusk,https://static.shareasale.com/image/68246/penguin_TR_RN_PDP_Savanna-Dusk_MED.jpg,https://www.shareasale.com/r.cfm?b=1404925&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,400,400,penguin
+        Tree Runners - Savanna Dusk,2019-08-06 10:44:48.797,68246,\"Penguin Corp\",www.penguin.com\r\n1404926,penguin
+        Wool Runners - Elephant Grass,https://static.shareasale.com/image/68246/penguin_FY19_August_PDP_WL_RN_Elephant_.jpg,https://www.shareasale.com/r.cfm?b=1404926&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,400,400,penguin
+        Wool Runners - Elephant Grass,2019-08-06 10:45:45.257,68246,\"Penguin Corp\",www.penguin.com\r\n1526275,SpringCore_Ads_women_WR_1_300x250,https://static.shareasale.com/image/68246/SpringCore_Ads_women_WR_1_300x250.jpg,https://www.shareasale.com/r.cfm?b=1526275&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,300,250,,2020-04-17 20:24:51.75,68246,\"Penguin Corp\",www.penguin.com\r\n1526278,SpringCore_Ads_womens_WL_new_300x250,https://static.shareasale.com/image/68246/SpringCore_Ads_womens_WL_new_300x250.jpg,https://www.shareasale.com/r.cfm?b=1526278&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,300,250,,2020-04-17 20:24:51.747,68246,\"Penguin Corp\",www.penguin.com\r\n1526279,SpringCore_Ads_womens_TB_300x250
+        copy,https://static.shareasale.com/image/68246/SpringCore_Ads_womens_TB_300x250copy.jpg,https://www.shareasale.com/r.cfm?b=1526279&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,300,250,,2020-04-17 20:24:51.743,68246,\"Penguin Corp\",www.penguin.com\r\n1526281,SpringCore_Ads_mens_Mizzle_300x250,https://static.shareasale.com/image/68246/SpringCore_Ads_mens_Mizzle_300x250.jpg,https://www.shareasale.com/r.cfm?b=1526281&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,300,250,,2020-04-17 20:24:51.74,68246,\"Penguin Corp\",www.penguin.com\r\n1526282,SpringCore_Ads_mens_WR_3_300x250,https://static.shareasale.com/image/68246/SpringCore_Ads_mens_WR_3_300x250.jpg,https://www.shareasale.com/r.cfm?b=1526282&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,300,250,,2020-04-17 20:24:51.733,68246,\"Penguin Corp\",www.penguin.com\r\n1526286,SpringCore_Ads_mens_WR_2_300x250
+        copy,https://static.shareasale.com/image/68246/SpringCore_Ads_mens_WR_2_300x250copy.jpg,https://www.shareasale.com/r.cfm?b=1526286&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,300,250,,2020-04-17 20:24:32.52,68246,\"Penguin Corp\",www.penguin.com\r\n1526289,SpringCore2020_Chalk_TR_1,https://static.shareasale.com/image/68246/SpringCore2020_Chalk_TR_1.png,https://www.shareasale.com/r.cfm?b=1526289&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,810,810,,2020-04-17
+        20:30:19.867,68246,\"Penguin Corp\",www.penguin.com\r\n1526293,SpringCore2020_Shot12_SFGreyWL_1764,https://static.shareasale.com/image/68246/SpringCore2020_Shot12_SFGreyWL_1764.png,https://www.shareasale.com/r.cfm?b=1526293&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,810,810,,2020-04-17
+        20:31:31.747,68246,\"Penguin Corp\",www.penguin.com\r\n1531851,Dasher_Lifestyle,https://static.shareasale.com/image/68246/200219_JS_penguin_GROUP_DUNES_03846_60m.jpg,https://www.shareasale.com/r.cfm?b=1531851&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,1024,768,,2020-04-28
+        15:30:50.923,68246,\"Penguin Corp\",www.penguin.com\r\n1531852,Dasher_Lifestyle,https://static.shareasale.com/image/68246/200219_JS_penguin_SINGLES_FEMALE_BETHAL.jpg,https://www.shareasale.com/r.cfm?b=1531852&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,1024,768,,2020-04-28
+        15:30:51.31,68246,\"Penguin Corp\",www.penguin.com\r\n1531855,Dasher_300x250,https://static.shareasale.com/image/68246/Dasher_Display_Sand-Hill_Splite_Geyser_3.jpg,https://www.shareasale.com/r.cfm?b=1531855&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,300,250,,2020-04-28 15:34:03.537,68246,\"Penguin Corp\",www.penguin.com\r\n1531857,Dasher_Cyclone_300x250,https://static.shareasale.com/image/68246/Dasher_Display_Female_Cyclone_300x250.jpg,https://www.shareasale.com/r.cfm?b=1531857&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,300,250,,2020-04-28 15:35:18.39,68246,\"Penguin Corp\",www.penguin.com\r\n1531858,Dasher_Flame_300x250,https://static.shareasale.com/image/68246/Dasher_Display_Female_Flame_300x250.jpg,https://www.shareasale.com/r.cfm?b=1531858&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,300,250,,2020-04-28 15:36:20.967,68246,\"Penguin Corp\",www.penguin.com\r\n1531860,Dasher_Geyser_970x250,https://static.shareasale.com/image/68246/Dasher_Display_Hero_970x250.jpg,https://www.shareasale.com/r.cfm?b=1531860&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,Banner
+        Ad,970,250,,2020-04-28 15:37:32.843,68246,\"Penguin Corp\",www.penguin.com\r\n1531962,Dasher_Geyser,https://static.shareasale.com/image/68246/TD1MGYS_SHOE_ANGLE_GLOBAL_MENS_TREE_DASH.jpg,https://www.shareasale.com/r.cfm?b=1531962&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,547,365,,2020-04-28
+        17:18:19.093,68246,\"Penguin Corp\",www.penguin.com\r\n1647955,\"Wool Dasher
+        Mizzle Storm Chasers 300x250 \",https://static.shareasale.com/image/68246/WDM_Nova-Lifestyle-300x250_StormChasers.jpg,https://www.shareasale.com/r.cfm?b=1647955&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,300,250,,2020-11-05
+        12:49:53.55,68246,\"Penguin Corp\",www.penguin.com\r\n1647956,Wool Dasher
+        Mizzle Run in the Rain 300x250,https://static.shareasale.com/image/68246/WDM_Meteroite-300x250_RunInTheRain.jpg,https://www.shareasale.com/r.cfm?b=1647956&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,300,250,,2020-11-05
+        12:50:29.087,68246,\"Penguin Corp\",www.penguin.com\r\n1656476,Smpenguin
+        Kid-Tested 300x250,https://static.shareasale.com/image/68246/smpenguin_display-kidcopy_300x250.gif,https://www.shareasale.com/r.cfm?b=1656476&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,300,250,,2020-11-16
+        16:29:18.353,68246,\"Penguin Corp\",www.penguin.com\r\n1656478,Smpenguin
+        Baa 300x250,https://static.shareasale.com/image/68246/smpenguin_display-baacopy_300x250.gif,https://www.shareasale.com/r.cfm?b=1656478&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,300,250,,2020-11-16
+        16:29:36.693,68246,\"Penguin Corp\",www.penguin.com\r\n1706006,Long Cardigan,https://static.shareasale.com/image/68246/longcardi.JPG,https://www.shareasale.com/r.cfm?b=1706006&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,466,466,,2021-02-01
+        15:09:47.447,68246,\"Penguin Corp\",www.penguin.com\r\n1706007,Wool Hoodie,https://static.shareasale.com/image/68246/hoodie.JPG,https://www.shareasale.com/r.cfm?b=1706007&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,468,468,,2021-02-01
+        15:10:20.497,68246,\"Penguin Corp\",www.penguin.com\r\n1722568,Birthday
+        Shoe,https://static.shareasale.com/image/68246/birthdayshoe.png,https://www.shareasale.com/r.cfm?b=1722568&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,1170,781,,2021-03-01
+        11:07:00.793,68246,\"Penguin Corp\",www.penguin.com\r\n1747459,Tree Dasher
+        300x600,https://static.shareasale.com/image/68246/TD_Geyser-Border-Still-300x600.jpg,https://www.shareasale.com/r.cfm?b=1747459&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,300,600,,2021-04-08
+        09:30:40.803,68246,\"Penguin Corp\",www.penguin.com\r\n1747460,Tree Dasher
+        728x90,https://static.shareasale.com/image/68246/TD_Geyser-Border-Still-728x90.jpg,https://www.shareasale.com/r.cfm?b=1747460&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,728,90,,2021-04-08
+        09:31:07.497,68246,\"Penguin Corp\",www.penguin.com\r\n1747461,Tree Dasher
+        300x250,https://static.shareasale.com/image/68246/TD_Geyser-Border-Still-300x250.jpg,https://www.shareasale.com/r.cfm?b=1747461&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,300,250,,2021-04-08
+        09:31:25.34,68246,\"Penguin Corp\",www.penguin.com\r\n1759807,Tree Dasher
+        Relay,https://static.shareasale.com/image/68246/Relay2.JPG,https://www.shareasale.com/r.cfm?b=1759807&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,922,682,,2021-04-27
+        10:35:50.7,68246,\"Penguin Corp\",www.penguin.com\r\n1760620,Wool Loungers
+        728x90,https://static.shareasale.com/image/68246/SpringCore_Ads_womens_WL_url_728x90.jpg,https://www.shareasale.com/r.cfm?b=1760620&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,728,90,,2021-04-28
+        10:44:02.893,68246,\"Penguin Corp\",www.penguin.com\r\n1760621,Wool Loungers
+        300x600,https://static.shareasale.com/image/68246/SpringCore_Ads_womens_WL_url_300x600.jpg,https://www.shareasale.com/r.cfm?b=1760621&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,300,600,,2021-04-28
+        10:44:21.117,68246,\"Penguin Corp\",www.penguin.com\r\n1760622,Wool Loungers
+        300x250,https://static.shareasale.com/image/68246/SpringCore_Ads_womens_WL_url_300x250.jpg,https://www.shareasale.com/r.cfm?b=1760622&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,300,250,,2021-04-28
+        10:44:36.693,68246,\"Penguin Corp\",www.penguin.com\r\n1781292,penguin
+        Tree Piper,https://static.shareasale.com/image/68246/treepipersingle.JPG,https://www.shareasale.com/r.cfm?b=1781292&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,,,317,395,,2021-05-27
+        10:41:07.5,68246,\"Penguin Corp\",www.penguin.com\r\n923405,Default Text,,https://www.shareasale.com/r.cfm?b=923405&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        penguin Here,,,,,2020-10-15 21:09:16.223,68246,\"Penguin Corp\",www.penguin.com\r\n1206652,penguin
+        Men's Wool Runners,,https://www.shareasale.com/r.cfm?b=1206652&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Men's Wool Runners,,,,,2018-07-06 17:30:42.303,68246,\"Penguin Corp\",www.penguin.com\r\n1206653,penguin
+        Men's Wool Loungers,,https://www.shareasale.com/r.cfm?b=1206653&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Men's Wool Loungers,,,,,2018-07-06 17:31:24.947,68246,\"Penguin Corp\",www.penguin.com\r\n1206654,penguin
+        Women's Wool Runners,,https://www.shareasale.com/r.cfm?b=1206654&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Women's Wool Runners,,,,,2018-07-06 17:32:31.197,68246,\"Penguin Corp\",www.penguin.com\r\n1206655,penguin
+        Women's Tree Runners,,https://www.shareasale.com/r.cfm?b=1206655&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Women's Tree Runners,,,,,2018-07-06 17:33:03.263,68246,\"Penguin Corp\",www.penguin.com\r\n1206657,penguin
+        Women's Wool Loungers,,https://www.shareasale.com/r.cfm?b=1206657&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Women's Wool Loungers,,,,,2018-07-06 17:38:50.49,68246,\"Penguin Corp\",www.penguin.com\r\n1206658,penguin
+        Women's Tree Loungers,,https://www.shareasale.com/r.cfm?b=1206658&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Women's Tree Loungers,,,,,2018-07-06 17:40:15.187,68246,\"Penguin Corp\",www.penguin.com\r\n1206659,penguin
+        Women's Tree Skippers,,https://www.shareasale.com/r.cfm?b=1206659&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Women's Tree Skippers,,,,,2018-07-06 17:40:54.563,68246,\"Penguin Corp\",www.penguin.com\r\n1206660,penguin
+        Men's Tree Runners,,https://www.shareasale.com/r.cfm?b=1206660&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Men's Tree Runners,,,,,2018-07-06 17:44:23.423,68246,\"Penguin Corp\",www.penguin.com\r\n1206661,penguin
+        Men's Tree Loungers,,https://www.shareasale.com/r.cfm?b=1206661&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Men's Tree Loungers,,,,,2018-07-06 17:42:46.18,68246,\"Penguin Corp\",www.penguin.com\r\n1206662,penguin
+        Men's Tree Skippers,,https://www.shareasale.com/r.cfm?b=1206662&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Men's Tree Skippers,,,,,2018-07-06 17:43:46.777,68246,\"Penguin Corp\",www.penguin.com\r\n1308640,penguin
+        Canada,,https://www.shareasale.com/r.cfm?b=1308640&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Canada,Canada,,,,2019-01-15 18:27:34.093,68246,\"Penguin Corp\",www.penguin.com\r\n1531832,penguin
+        Tree Dashers,,https://www.shareasale.com/r.cfm?b=1531832&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Tree Dashers,,,,,2020-04-28 15:15:27.217,68246,\"Penguin Corp\",www.penguin.com\r\n1636700,Men's
+        Apparel,,https://www.shareasale.com/r.cfm?b=1636700&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Now: penguin Men's Apparel,,,,,2020-10-20 19:16:39.107,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1636701,penguin Women's Apparel,,https://www.shareasale.com/r.cfm?b=1636701&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Now: penguin Women's Apparel,,,,,2020-10-21 16:14:36.473,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1647905,Wool Dasher Mizzle Women,,https://www.shareasale.com/r.cfm?b=1647905&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        the Wool Dasher Mizzle Women,,,,,2020-11-05 11:50:26.137,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1647906,Wool Dasher Mizzle Men,,https://www.shareasale.com/r.cfm?b=1647906&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        the Wool Dasher Mizzle Men,,,,,2020-11-05 11:51:01.18,68246,\"Penguin Corp\",www.penguin.com\r\n1654589,Smpenguin,,https://www.shareasale.com/r.cfm?b=1654589&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Smpenguin,,,,,2020-11-13 17:26:54.897,68246,\"Penguin Corp\",www.penguin.com\r\n1663135,penguin
+        Apparel (Launch Page),,https://www.shareasale.com/r.cfm?b=1663135&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Now: penguin Apparel,,,,,2020-11-23 15:27:00.097,68246,\"Penguin Corp\",www.penguin.com\r\n1665045,penguin
+        Black Friday,,https://www.shareasale.com/r.cfm?b=1665045&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Now: penguin Black Friday,,,,,2020-11-24 16:48:53.36,68246,\"Penguin Corp\",www.penguin.com\r\n1665046,penguin
+        Cyber Monday,,https://www.shareasale.com/r.cfm?b=1665046&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Now: penguin Cyber Monday,,,,,2020-11-24 16:49:13.64,68246,\"Penguin Corp\",www.penguin.com\r\n1691550,Shop
+        Women's Tree Dasher,,https://www.shareasale.com/r.cfm?b=1691550&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Women's Tree Dasher,,,,,2021-01-08 12:04:34.7,68246,\"Penguin Corp\",www.penguin.com\r\n1691551,Shop
+        Men's Tree Dasher,,https://www.shareasale.com/r.cfm?b=1691551&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Men's Tree Dasher,,,,,2021-01-08 12:04:56.27,68246,\"Penguin Corp\",www.penguin.com\r\n1706008,Men's
+        Wool Hoodie,,https://www.shareasale.com/r.cfm?b=1706008&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Men's Wool Hoodie,,,,,2021-02-01 15:12:16.557,68246,\"Penguin Corp\",www.penguin.com\r\n1706009,Women's
+        Long Wool Cardi,,https://www.shareasale.com/r.cfm?b=1706009&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Women's Long Wool Cardi,,,,,2021-02-01 15:12:56.123,68246,\"Penguin Corp\",www.penguin.com\r\n1714546,Men's
+        Wool Dasher Mizzles - Mid,,https://www.shareasale.com/r.cfm?b=1714546&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Now: Men's Wool Dasher Mizzles - Mid,,,,,2021-02-12 10:10:10.63,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1714547,Women's Wool Dasher Mizzles - Mid,,https://www.shareasale.com/r.cfm?b=1714547&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Now: Women's Wool Dasher Mizzles - Mid,,,,,2021-02-12 10:10:50.573,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1722569,Men's Wool Runner Fluffs,,https://www.shareasale.com/r.cfm?b=1722569&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Men's Wool Runner Fluffs,,,,,2021-03-01 11:07:54.31,68246,\"Penguin Corp\",www.penguin.com\r\n1722570,Women's
+        Wool Runner Fluffs,,https://www.shareasale.com/r.cfm?b=1722570&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Women's Wool Runner Fluffs,,,,,2021-03-01 11:08:39.85,68246,\"Penguin Corp\",www.penguin.com\r\n1722889,Skimlinks
+        Hearst Commission Rate - 17.5%,,https://www.shareasale.com/r.cfm?b=1722889&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Now: penguin,,,,,2021-03-01 17:04:50.58,68246,\"Penguin Corp\",www.penguin.com\r\n1728810,penguin
+        Plant Leather,,https://www.shareasale.com/r.cfm?b=1728810&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,penguin
+        Plant Leather - Coming December 2021,,,,,2021-03-10 12:36:34.67,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1747462,Women's Long Sleeve,,https://www.shareasale.com/r.cfm?b=1747462&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Women's Long Sleeve,,,,,2021-04-08 09:32:24.003,68246,\"Penguin Corp\",www.penguin.com\r\n1747463,Men's
+        Long Sleeve,,https://www.shareasale.com/r.cfm?b=1747463&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Men's Long Sleeve,,,,,2021-04-08 09:32:47.747,68246,\"Penguin Corp\",www.penguin.com\r\n1747465,Women's
+        Classic Tee,,https://www.shareasale.com/r.cfm?b=1747465&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Women's Classic Tee,,,,,2021-04-08 09:33:13.17,68246,\"Penguin Corp\",www.penguin.com\r\n1747466,Women's
+        Relaxed Tee,,https://www.shareasale.com/r.cfm?b=1747466&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Women's Relaxed Tee,,,,,2021-04-08 09:33:48.85,68246,\"Penguin Corp\",www.penguin.com\r\n1747467,Men's
+        Tee,,https://www.shareasale.com/r.cfm?b=1747467&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Men's
+        Tee,,,,,2021-04-08 09:34:13.247,68246,\"Penguin Corp\",www.penguin.com\r\n1754099,Regenerative
+        Agriculture,,https://www.shareasale.com/r.cfm?b=1754099&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Learn
+        more about penguin regenerative agriculture commitments,,,,,2021-04-19 16:46:13.627,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1754102,penguin Earth Day,,https://www.shareasale.com/r.cfm?b=1754102&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Learn
+        more about penguin Earth Day campaign,,,,,2021-04-19 16:42:23.553,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1759808,Women's Tree Dasher Relay,,https://www.shareasale.com/r.cfm?b=1759808&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Women's Tree Dasher Relay,,,,,2021-04-27 10:36:18.7,68246,\"Penguin Corp\",www.penguin.com\r\n1759809,Men's
+        Tree Dasher Relay,,https://www.shareasale.com/r.cfm?b=1759809&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        Men's Tree Dasher Relay,,,,,2021-04-27 10:36:57.113,68246,\"Penguin Corp\",www.penguin.com\r\n1770901,Women's
+        Tree Runners - Color Refresh,,https://www.shareasale.com/r.cfm?b=1770901&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        New Colors of Women's Tree Runners,,,,,2021-05-13 10:31:23.2,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1770902,Men's Tree Runners Color Refresh,,https://www.shareasale.com/r.cfm?b=1770902&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        New Colors of Men's Tree Runners,,,,,2021-05-13 10:32:02.177,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1770910,Women's Tree Breezers - Color Refresh,,https://www.shareasale.com/r.cfm?b=1770910&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        New Colors of Women's Tree Breezers,,,,,2021-05-13 10:35:02.083,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1771779,Women's Tree Runner - The Good Trade,,https://www.shareasale.com/r.cfm?b=1771779&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Women's
+        Tree Runner,,,,,2021-05-14 14:42:42.277,68246,\"Penguin Corp\",www.penguin.com\r\n1771780,Men's
+        Tree Runner - The Good Trade,,https://www.shareasale.com/r.cfm?b=1771780&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Men's
+        Tree Runner,,,,,2021-05-14 13:08:45.053,68246,\"Penguin Corp\",www.penguin.com\r\n1781285,penguin
+        Tree Piper Men,,https://www.shareasale.com/r.cfm?b=1781285&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,\"Shop
+        penguin Men's Tree Piper \",,,,,2021-05-27 10:21:29.62,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1781287,penguin Tree Piper Womens,,https://www.shareasale.com/r.cfm?b=1781287&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        penguin Women's Tree Piper,,,,,2021-05-27 10:22:23.343,68246,\"penguin,
+        Inc\",www.penguin.com\r\n1786826,Shop the penguin Father's Day Collection,,https://www.shareasale.com/r.cfm?b=1786826&u=<AFFILIATE_ID>&m=68246&urllink=&afftrack=,Shop
+        the penguin Father's Day Collection,,,,,2021-06-04 14:22:40.087,68246,\"penguin,
+        Inc\",www.penguin.com \r\n"
+    http_version:
+  recorded_at: Sun, 20 Jun 2021 16:02:49 GMT
+recorded_with: VCR 5.1.0
