@@ -5,7 +5,9 @@ module Shareasale
     class Error < StandardError; end
 
     class ConfigurationError < Error; end
+
     class MissingCredentialsError < Error; end
+
     class InvalidRequestError < Error; end
   end
 end
