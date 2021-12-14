@@ -7,7 +7,7 @@ RSpec.describe 'Activity Detail' do
     let(:example_row) do
       {
         'Trans ID' => '154945722',
-        'User ID' => '1965836',
+        'User ID' => '123456789',
         'Merchant ID' => '84199',
         'Trans Date' => '01/03/2021 12:41:28 PM',
         'Trans Amount' => '138',

@@ -1,0 +1,26 @@
+name: Tests and Linter
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@477b21f02be01bcb8030d50f37cfec92bfa615b6
+        with:
+          ruby-version: 3.0.0
+      - name: Install dependencies
+        run: bundle install
+      - name: Run tests
+        env:
+          TOKEN: rand-token-not-real
+          AFFILIATE_ID: 123456789
+          API_SECRET: very-secret-secret
+        run: bundle exec rspec
+      - name: Run Rubocop
+        run: bundle exec rubocop

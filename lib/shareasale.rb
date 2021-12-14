@@ -6,7 +6,6 @@ require 'faraday'
 require 'json'
 require 'time'
 
-
 require 'shareasale/version'
 require 'shareasale/errors'
 require 'shareasale/request'
@@ -37,7 +36,7 @@ require 'shareasale/ledger_report'
 require 'shareasale/balance_inquiry'
 
 module Shareasale
-  def self.new(opts={})
+  def self.new(opts = {})
     required_opts = %i[token api_secret affiliate_id]
     missing_opts = required_opts.select { |opt| opts[opt].nil? }
     raise Shareasale::Errors::MissingCredentialsError, "Please provide #{missing_opts.join(', ')}" unless missing_opts.empty?

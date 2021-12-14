@@ -7,7 +7,7 @@ module Shareasale
     end
 
     def required_opts
-      [:order_date, :order_number, :merchant_id]
+      %i[order_date order_number merchant_id]
     end
   end
 end

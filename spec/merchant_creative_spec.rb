@@ -8,7 +8,7 @@ RSpec.describe 'Merchant Creative' do
       { 'Banner Id' => '1219962',
         'Name' => 'penguin Logo',
         'Image Url' => 'https://static.shareasale.com/image/68246/penguinlogoB.jpg',
-        'Click Url' => 'https://www.shareasale.com/r.cfm?b=1219962&u=1965836&m=68246&urllink=&afftrack=',
+        'Click Url' => 'https://www.shareasale.com/r.cfm?b=1219962&u=123456789&m=68246&urllink=&afftrack=',
         'Text' => nil,
         'Category' => 'Logo',
         'Image Width' => '1749',

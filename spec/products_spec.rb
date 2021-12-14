@@ -9,7 +9,7 @@ RSpec.describe 'Products' do
         'Name' => "penguin Women's Wool Slip On Shoes, Dark Blue, Size 9",
         'Merchant Id' => '68246',
         'Organization' => 'Penguin Corp',
-        'Link' => 'https://www.shareasale.com/m-pr.cfm?merchantID=68246&userID=1965836&productID=1213935343',
+        'Link' => 'https://www.shareasale.com/m-pr.cfm?merchantID=68246&userID=123456789&productID=1213935343',
         'Thumbnail' => nil,
         'Big Image' =>
   'https://cdn.shopify.com/s/files/1/1104/4168/products/WL2MMST_SHOE_ANGLE_GLOBAL_MENS_WOOL_LOUNGER_2_STORM_BLUE_GREY.png?v=1621641518',
