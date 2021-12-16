@@ -7,6 +7,7 @@ require 'json'
 require 'time'
 
 require 'shareasale/version'
+require 'shareasale/parsers/csv_parser'
 require 'shareasale/errors'
 require 'shareasale/request'
 require 'shareasale/authentication'

@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require 'csv'
-
 module Shareasale
   class APIResource
     PATH = '/x.cfm'
@@ -12,7 +10,7 @@ module Shareasale
     def initialize(client, opts = {})
       @client = client
       @opts = default_opts.merge(opts).with_indifferent_access
-      validate_rquired_opts
+      validate_required_opts
     end
 
     ## TODO: allow for multipler parsers injected, handle errors gracefully
@@ -20,7 +18,7 @@ module Shareasale
       response = Request.new(client, self).call
       raise Errors::InvalidRequestError, response.body if response.body.match?(/\AInvalid Request/)
 
-      CSV.parse(response.body, headers: true)
+      parser.parse(response.body)
     end
 
     def action_verb
@@ -29,16 +27,25 @@ module Shareasale
 
     private
 
-    def validate_rquired_opts
-      errors = []
-      required_opts.each { |opt| errors << opt if opts[opt].nil? }
-      return if errors.empty?
+    def validate_required_opts
+      missing_opts = []
+      required_opts.each { |opt| missing_opts << opt if opts[opt].nil? }
+      return if missing_opts.empty?
 
-      raise ArgumentError, "#{errors.join(', ')} are missing"
+      raise ArgumentError, "#{missing_opts.join(', ')} are missing"
     end
 
     def required_opts
       []
+    end
+
+    def parser
+      case @opts[:format]
+      when 'csv'
+        Parsers::CsvParser
+      when 'xml'
+        Parsers::XmlParser
+      end
     end
 
     def default_opts
