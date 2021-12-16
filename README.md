@@ -60,7 +60,7 @@ optional
 - xml_format
 
 ```
-Shareasale.activity_details(
+client.activity_details(
     start_date: '07-31-2020',
     end_date: '08-31-2020',
     merchant_id: 234234234,
