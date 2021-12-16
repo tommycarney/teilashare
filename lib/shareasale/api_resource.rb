@@ -47,8 +47,8 @@ module Shareasale
         Parsers::XmlParser
       when 'pipe'
         Parsers::PipeParser
-      else 
-        raise Shareasale::Errors::UnsupportedFormat.new "Format: #{@opts[:format]} not supported."
+      else
+        raise Shareasale::Errors::UnsupportedFormat, "Format: #{@opts[:format]} not supported."
       end
     end
 
