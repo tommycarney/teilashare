@@ -5,8 +5,8 @@
 /doc/
 /pkg/
 /spec/reports/
-/tmp/
-/Gemfile.lock/
+/tmp/git 
+/Gemfile.lock
 
 # rspec failure tracking
 .rspec_status
