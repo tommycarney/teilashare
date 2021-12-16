@@ -2,7 +2,7 @@
 
 RSpec.shared_context 'with an initialized client' do
   let(:client) do
-    Shareasale.new(
+    Teilashare.new(
       token: ENV['TOKEN'],
       affiliate_id: ENV['AFFILIATE_ID'],
       api_secret: ENV['API_SECRET'],

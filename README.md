@@ -1,4 +1,4 @@
-# Shareasale
+# Teilashare
 
 This is an *unofficial* client library for the ShareaSale affiliate reporting API. It does not include the publisher API or any other APIs at the moment. Please see below for the supported endpoints as well as a required and optional parameters on each endpoint.
 
@@ -7,7 +7,7 @@ This is an *unofficial* client library for the ShareaSale affiliate reporting AP
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'shareasale'
+gem 'teilashare'
 ```
 
 And then execute:
@@ -16,7 +16,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install shareasale
+    $ gem install teilashare
 
 ## Usage
 
@@ -28,7 +28,7 @@ credentials = {
   api_secret: ENV['API_SECRET'],
   affiliate_id: ENV['affiliate_id']
 }
-client = Shareasale.new(credentials)
+client = Teilashare.new(credentials)
 
 ```
 
@@ -37,7 +37,7 @@ You can then request reports on this client via:
 ```
 result = client.today_stats(format: 'xml')
 ```
-Please refer to the Shareasale documentation for required and optional parameters
+Please refer to the Teilashare documentation for required and optional parameters
 for your desired report. The default format is CSV, but you can request XML format or pipe formatted data (PSV?) via the format option.
 
 ### Activity Details
@@ -462,7 +462,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/tommycarney/shareasale.
+Bug reports and pull requests are welcome on GitHub at https://github.com/tommycarney/partagerasale.
 
 
 ## License

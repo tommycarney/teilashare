@@ -1,14 +1,14 @@
 # frozen_string_literal: true
 
-RSpec.describe Shareasale do
+RSpec.describe Teilashare do
   it 'has a version number' do
-    expect(Shareasale::VERSION).not_to be nil
+    expect(Teilashare::VERSION).not_to be nil
   end
 
   context 'authentication' do
     context 'when missing' do
       it 'raises a MissingCredentialsError error' do 
-        expect { Shareasale.new({}).today_stats }.to raise_error(Shareasale::Errors::MissingCredentialsError)
+        expect { Teilashare.new({}).today_stats }.to raise_error(Teilashare::Errors::MissingCredentialsError)
       end
     end
 
@@ -22,7 +22,7 @@ RSpec.describe Shareasale do
       end
 
       it 'raises an InvalidRequestError', vcr: 'invalid-auth' do 
-        expect { Shareasale.new(authentication).today_stats }.to raise_error(Shareasale::Errors::InvalidRequestError)
+        expect { Teilashare.new(authentication).today_stats }.to raise_error(Teilashare::Errors::InvalidRequestError)
       end
     end
   end
