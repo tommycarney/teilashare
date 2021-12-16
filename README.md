@@ -23,22 +23,22 @@ Or install it yourself as:
 Instantiate a client via:
 
 ```
-opts = {
+credentials = {
   token: ENV['TOKEN'],
   api_secret: ENV['API_SECRET'],
   affiliate_id: ENV['affiliate_id']
 }
-client = Shareasale.new(opts)
+client = Shareasale.new(credentials)
 
 ```
 
 You can then request reports on this client via:
 
 ```
-result = client.today_stats
+result = client.today_stats(format: 'xml')
 ```
 Please refer to the Shareasale documentation for required and optional parameters
-for your desired report.
+for your desired report. The default format is CSV, but you can request XML format or pipe formatted data (PSV?) via the format option.
 
 ### Activity Details
 
@@ -104,12 +104,6 @@ optional params
 - format	pipe, xml, csv
 
 ```
-client = Shareasale.new(
-  token: ENV['TOKEN'],
-  affiliate_id: ENV['AFFILIATE_ID'],
-  api_secret: ENV['API_SECRET'],
-  api_version:   ENV['API_VERSION']
-)
 csv = client.merchant_timespan(date_start: '12/31/2020')
 
 ```
@@ -300,15 +294,14 @@ required params
 - n/a
 
 optional params
-No	merchantId	List of Merchant Id
-No	category	Click for values.
-No	programStatus	online, offline, lowfunds, onlineNotLowFunds
-No	keyword	word or phrase
-No	sortCol	organization, salescommission, hitcommission, leadcommission, merchantStatus, category, applydate
-No	sortDir	asc or desc
-No	XMLFormat	0 or 1
-No	format	pipe, xml, csv
-
+-	merchantId	List of Merchant Id
+-	category	Click for values.
+-	programStatus	online, offline, lowfunds, onlineNotLowFunds
+-	keyword	word or phrase
+-	sortCol	organization, salescommission, hitcommission, leadcommission, merchantStatus, category, applydate
+-	sortDir	asc or desc
+-	XMLFormat	0 or 1
+-	format	pipe, xml, csv
 ```
 client.merchant_status
 
@@ -319,10 +312,10 @@ required params
 - n/a
 
 optional params
-No	sortCol	bannerId, bannerHeight, bannerWidth, category, type
-No	sortDir	asc or desc
-No	XMLFormat	0 or 1
-No	format	pipe, xml, csv
+-	sortCol	bannerId, bannerHeight, bannerWidth, category, type
+-	sortDir	asc or desc
+-	XMLFormat	0 or 1
+-	format	pipe, xml, csv
 
 conditional params
 -	merchantId	Valid Merchant Id. Required unless modifiedDate is present.
@@ -352,7 +345,7 @@ client.merchant_gift_cards
 
 ### Edit Trail
 required params
-Yes	dateStart	mm/dd/yyyy
+-	dateStart	mm/dd/yyyy
 
 optional params
 -	dateEnd	mm/dd/yyyy
@@ -368,7 +361,7 @@ client.edit_trail
 
 ### Payment Summary
 required params
-Yes	paymentDate	mm/dd/yyyy must be 20th of month in the last 12 months
+-	paymentDate	mm/dd/yyyy must be 20th of month in the last 12 months
 
 optional params
 
@@ -459,7 +452,7 @@ If you want to record API requests, you'll need to export environment variables 
 
 ```
 export TOKEN=abc
-export AFFILIATE_ID=123
+export AFFILIATE_ID=123456789
 export API_SECRET=def
 export API_VERSION=2.3
 
