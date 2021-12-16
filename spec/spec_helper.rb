@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 require 'bundler/setup'
-require 'shareasale'
+require 'teilashare'
 require 'vcr'
 require './spec/support/shared_context'
 
