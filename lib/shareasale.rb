@@ -8,6 +8,8 @@ require 'time'
 
 require 'shareasale/version'
 require 'shareasale/parsers/csv_parser'
+require 'shareasale/parsers/xml_parser'
+require 'shareasale/parsers/pipe_parser'
 require 'shareasale/errors'
 require 'shareasale/request'
 require 'shareasale/authentication'
