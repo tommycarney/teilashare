@@ -13,9 +13,9 @@ module Shareasale
       validate_required_opts
     end
 
-    ## TODO: allow for multipler parsers injected, handle errors gracefully
     def call
       response = Request.new(client, self).call
+      # the API returns 200 OK on invalid authentication GET requests, so need to parse error from body instead
       raise Errors::InvalidRequestError, response.body if response.body.match?(/\AInvalid Request/)
 
       parser.parse(response.body)
