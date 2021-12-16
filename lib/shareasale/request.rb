@@ -19,7 +19,7 @@ module Shareasale
     private
 
     def request_url
-      URI::HTTPS.build(host: APIResource::HOST, path: APIResource::PATH, query: resource_path).to_s
+      URI::HTTPS.build(host: Resources::APIResource::HOST, path: Resources::APIResource::PATH, query: resource_path).to_s
     end
 
     def resource_path
