@@ -11,8 +11,8 @@ module Teilashare
 
     def call
       connection.get(request_url) do |req|
-        req.headers['x-Shareashare-Date'] = auth.date_string
-        req.headers['x-Shareashare-Authentication'] = auth.hash
+        req.headers['x-ShareASale-Date'] = auth.date_string
+        req.headers['x-ShareASale-Authentication'] = auth.hash
       end
     end
 
