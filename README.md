@@ -12,31 +12,36 @@ gem 'teilashare'
 
 And then execute:
 
-    $ bundle install
+```bash
+$ bundle install
+```
 
 Or install it yourself as:
 
-    $ gem install teilashare
+```bash
+$ gem install teilashare
+```
 
 ## Usage
 
 Instantiate a client via:
 
-```
+```ruby
 credentials = {
   token: ENV['TOKEN'],
   api_secret: ENV['API_SECRET'],
   affiliate_id: ENV['affiliate_id']
 }
-client = Teilashare.new(credentials)
 
+client = Teilashare.new(credentials)
 ```
 
 You can then request reports on this client via:
 
-```
+```ruby
 result = client.today_stats(format: 'xml')
 ```
+
 Please refer to the Teilashare documentation for required and optional parameters
 for your desired report. The default format is CSV, but you can request XML format or pipe formatted data (PSV?) via the format option.
 
@@ -59,14 +64,12 @@ optional
 - XMLFormat
 - xml_format
 
-```
+```ruby
 client.activity_details(
-    start_date: '07-31-2020',
-    end_date: '08-31-2020',
-    merchant_id: 234234234,
-
-  )
-
+  start_date: '07-31-2020',
+  end_date: '08-31-2020',
+  merchant_id: 234234234
+)
 ```
 
 ### Activity Summary
@@ -86,9 +89,8 @@ optional params
 -	XMLFormat	0 or 1
 - format	pipe, xml, csv
 
-```
+```ruby
 client.activity_summary(sort_col: 'salestotal', sort_dir: 'asc')
-
 ```
 
 ### Merchant Timespan Report
@@ -103,9 +105,8 @@ optional params
 -	XMLFormat	0 or 1
 - format	pipe, xml, csv
 
-```
+```ruby
 csv = client.merchant_timespan(date_start: '12/31/2020')
-
 ```
 
 ### Today's Stats
@@ -120,12 +121,12 @@ optional params
 - format	pipe, xml, csv
 
 
-```
+```ruby
 client.today_stats(
   distinct_link: 1,
   sort_col: 'commissions',
   sort_dir: 'asc'
-  )
+)
 ```
 
 ### Monthly Summary
@@ -139,12 +140,12 @@ optional params
 -	format	pipe, xml, csv
 
 
-```
+```ruby
 client.monthly_summary(
   date_month: '12/01/2020',
   sort_col: 'commissions',
   sort_dir: 'asc'
-  )
+)
 ```
 
 
@@ -158,10 +159,10 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.void_trail(
-  date_start: '12/01/2020',
-  )
+  date_start: '12/01/2020'
+)
 ```
 
 ### Traffic
@@ -182,10 +183,10 @@ conditionally required
 -	bannerType	Click for values.
 -	merchantId	Valid Merchant Id
 
-```
+```ruby
 client.traffic(
-  date_start: '12/01/2020',
-  )
+  date_start: '12/01/2020'
+)
 ```
 
 ### API Token Count
@@ -196,7 +197,7 @@ optional params
 - XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.api_token_count
 
 ```
@@ -212,11 +213,10 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.products(
   keyword: 'wool hats'
-  )
-
+)
 ```
 
 ### Invalid Links
@@ -228,11 +228,10 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.invalid_links(
   merchantIdList: 12342,1234234,234234
-  )
-
+)
 ```
 
 ### Order Inquiry
@@ -245,14 +244,14 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.order_inquiry(
   merchant_id: 1234,
   order_date: '12/31/2020',
   order_number: abcdef234
-  )
-
+)
 ```
+
 ### Merchant Datafeeds
 required params
 - n/a
@@ -268,9 +267,8 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.merchant_datafeed
-
 ```
 
 ### Coupon Deals
@@ -284,9 +282,8 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.coupon_deal
-
 ```
 
 ### Merchant Status
@@ -302,9 +299,9 @@ optional params
 -	sortDir	asc or desc
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
-```
-client.merchant_status
 
+```ruby
+client.merchant_status
 ```
 
 ### Merchant Creatives
@@ -322,9 +319,8 @@ conditional params
 -	modifiedDate	Valid date no more than 31 days in the past. Required unless merchantID is present. Format MM/DD/YYYY
 
 
-```
+```ruby
 client.merchant_creative
-
 ```
 
 
@@ -338,9 +334,8 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.merchant_gift_cards
-
 ```
 
 ### Edit Trail
@@ -353,11 +348,9 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.edit_trail
-
 ```
-
 
 ### Payment Summary
 required params
@@ -370,10 +363,10 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.payment_summary
-
 ```
+
 ### Merchant Search
 required params
 - n/a
@@ -395,10 +388,10 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.merchant_search(keyword: 'wool')
-
 ```
+
 ### Merchant Search by Product
 required params
 -	keyword	Word or Phrase
@@ -410,10 +403,10 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.merchant_search_by_product(keyword: 'shoes')
-
 ```
+
 ### Ledger Report
 required params
 - n/a
@@ -426,9 +419,8 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.ledger_report
-
 ```
 
 ### Balance Inquiry
@@ -439,9 +431,8 @@ optional params
 -	XMLFormat	0 or 1
 -	format	pipe, xml, csv
 
-```
+```ruby
 client.balance_inquiry
-
 ```
 
 ## Development
@@ -450,12 +441,11 @@ After checking out the repo, run `bin/setup` to install dependencies. Then, run 
 
 If you want to record API requests, you'll need to export environment variables in the format:
 
-```
+```bash
 export TOKEN=abc
 export AFFILIATE_ID=123456789
 export API_SECRET=def
 export API_VERSION=2.3
-
 ```
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
